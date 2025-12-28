@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>tagzvuk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+/* ===== ФОН ===== */
+#bg {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    filter: blur(30px) brightness(0.7);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ===== КОНТЕЙНЕР ===== */
+#buttons {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* ===== КНОПКИ ===== */
+.sound-btn {
+    width: 320px;
+    padding: 26px 0;
+    font-size: 30px;
+    color: white;
+    background: rgba(255,255,255,0.22);
+    border: none;
+    border-radius: 22px;
+    backdrop-filter: blur(16px);
+    cursor: pointer;
+
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.sound-btn:active {
+    transform: scale(0.95);
+    background: rgba(255,255,255,0.35);
+}
+</style>
+</head>
+
+<body>
+
+<!-- ФОН -->
+<img id="bg" src="bg.png" alt="фон">
+
+<!-- КНОПКИ -->
+<div id="buttons">
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/t/'">
+        творог
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/s/'">
+        стон
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/m/'">
+        mi bombo
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/gp/'">
+        гудок поезда
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/g/'">
+        Германия
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/dtch/'">
+        да ты чё
+    </button>
+
+    <button class="sound-btn"
+        onclick="window.location.href='https://nngit69.github.io/tagzvuk/d/'">
+        дядя саша
+    </button>
+</div>
+
+</body>
+</html>
